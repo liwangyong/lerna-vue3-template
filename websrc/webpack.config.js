@@ -6,10 +6,10 @@ const WebpackBar = require("webpackbar");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const isProd = process.env.NODE_ENV === "production";
-
+console.log(process.env.NODE_ENV);
 const config = {
   mode: isProd ? "production" : "development",
-  devtool: !isProd && "cheap-module-eval-source-map",
+  devtool: !isProd && "source-map",
   entry: path.resolve(__dirname, "./index.ts"),
   output: {
     path: path.resolve(__dirname, "../websrc-dist"),
