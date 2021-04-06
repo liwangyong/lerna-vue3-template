@@ -1,0 +1,23 @@
+{
+  "name": "button",
+  "version": "0.0.0",
+  "description": "this is button",
+  "keywords": [
+    "button",
+    "vue3"
+  ],
+  "author": "hookview <18260439083@163.com>",
+  "homepage": "http://button",
+  "license": "ISC",
+  "main": "lib/button.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
