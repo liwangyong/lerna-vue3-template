@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./websrc/webpack.config.js"
+    "dev": "lerna bootstrap && cross-env NODE_ENV=development webpack-dev-server --config ./websrc/webpack.config.js"
   },
   "devDependencies": {
     "lerna": "^4.0.0"

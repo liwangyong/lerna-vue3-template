@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import HookButton from '@lerna-repo/button'
+import HookButton from 'button'
 export default {
     components: {
         HookButton
