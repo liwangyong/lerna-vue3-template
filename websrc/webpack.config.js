@@ -6,7 +6,7 @@ const WebpackBar = require("webpackbar");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const isProd = process.env.NODE_ENV === "production";
-console.log(process.env.NODE_ENV);
+
 const config = {
   mode: isProd ? "production" : "development",
   devtool: !isProd && "source-map",

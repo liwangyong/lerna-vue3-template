@@ -5,7 +5,7 @@ module.exports = {
   // See https://github.com/babel/babel/issues/12066
   presets: [
     [
-      "@babel/env",
+      "@babel/preset-env",
       {
         loose: true,
         modules: false
@@ -17,7 +17,6 @@ module.exports = {
     "@vue/babel-plugin-jsx",
     "@babel/proposal-class-properties",
     "@babel/transform-runtime",
-    "lodash"
   ],
   overrides: [
     {
@@ -25,19 +24,4 @@ module.exports = {
       plugins: ["@babel/transform-typescript"]
     }
   ],
-  env: {
-    utils: {
-      ignore: ["**/*.test.ts", "**/*.spec.ts"],
-      presets: [
-        [
-          "@babel/env",
-          {
-            loose: true,
-            modules: "commonjs"
-          }
-        ]
-      ],
-      plugins: []
-    }
-  }
 };
